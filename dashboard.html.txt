@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Shipper - Đối soát COD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>Shipper</h3>
+        <ul>
+            <li onclick="showPage('orders')">📦 Danh sách đơn</li>
+            <li onclick="showPage('cod')">💰 Đối soát COD</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div id="orders" class="page">
+            <h2>Danh sách đơn hàng</h2>
+            <p>Đơn hàng đang giao...</p>
+        </div>
+
+        <div id="cod" class="page active">
+            <h2>Đối soát thu hộ COD</h2>
+
+            <table>
+                <tr>
+                    <th>Mã đơn</th>
+                    <th>Tiền COD</th>
+                    <th>Đã thu</th>
+                    <th>Trạng thái</th>
+                </tr>
+                <tr>
+                    <td>DH001</td>
+                    <td>500.000</td>
+                    <td>500.000</td>
+                    <td class="success">Đã khớp</td>
+                </tr>
+                <tr>
+                    <td>DH002</td>
+                    <td>300.000</td>
+                    <td>250.000</td>
+                    <td class="warning">Chênh lệch</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

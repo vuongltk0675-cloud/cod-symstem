@@ -1,0 +1,83 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* LOGIN */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* DASHBOARD */
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background: #1e3c72;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background: #2a5298;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.success { color: green; }
+.error { color: red; }
+.warning { color: orange; }
+
+.btn-success {
+    background: green;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+.btn-warning {
+    background: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+}
